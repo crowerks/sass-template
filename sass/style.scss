@@ -1,5 +1,270 @@
 @import "variables";
+//@import "dmb-styling";
+
+/* =============================================================================
+                                                 Basics
+============================================================================= */
+html,
+body {
+    height: 100%;
+    font-size: $font-size;
+    font-family: 'Arvo', serif;
+}
 
 body {
-    background-color: $red;
+    background-color: $white;
 }
+.all0 {
+    padding: 0;
+    margin: 0;
+}
+.alignright {
+    text-align: right;
+    float: right;
+}
+.opacity {
+    opacity: $opacity;
+}
+/* =============================================================================
+                                                 Header
+============================================================================= */
+.color-bar {
+    min-height: $color-bar;
+    background-image: url('http://schwieterts.com/wp-content/uploads/2016/07/color-bar.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.navbar-brand {
+    float: left;
+    position: absolute;
+    z-index: 11;
+    padding: 0;
+    left: 50%;
+    margin-top: -$color-bar;
+    width: 400px;
+    margin-left: -200px;
+}
+.white-bar-top {
+    padding-top: ($color-bar - 10px);
+    border-top: 30px solid $white;
+    border-image: url('/images/color-bar.jpg') 50 repeat stretch;
+}
+/* =============================================================================
+                                                 Div Styles
+============================================================================= */
+
+.full-height {
+    height: 100%;
+}
+
+.half-height {
+    height: 50%;
+    overflow: hidden;
+}
+.bg-pink {
+    background-color: $lightpink;
+    background-image: url(/images/ice-cream-edit.jpg);
+    background-size: cover;
+}
+
+.bg-orange {
+    background-color: $lightorange;
+}
+
+.bg-blue {
+    background-color: $lightblue;
+}
+.pink-burbles {
+    height:90px; 
+    background-image: url(/images/pink-banner.png);
+    background-repeat: repeat-x;
+}
+
+.heading-banner {
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+    margin: 0;
+}
+.banner-pink {
+    background-image: url(/images/banner-pink.png);
+}
+.banner-orange {
+    background-image: url(/images/banner-orange.png);
+    background-position: bottom right;
+}
+.banner-orange h1 {
+    padding-right: 130px !important;
+}
+.banner-blue {
+    background-image: url(/images/banner-blue.png);
+}
+.background-image-contain {
+    background-position: top left;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.background-image-cover {
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.special-div {
+    position: relative;
+    top: 10%;
+    width: 25%;
+    left: 10%;
+}
+.special-div h2 {
+    line-height: ($font-size * 2 );
+}
+/* =============================================================================
+                                               Starbust
+============================================================================= */
+.position-burst {
+    position: absolute;
+    z-index: 15;
+    top: 30%;
+    width: 70%;
+    height: 35%;
+    left: 15%;
+}
+.position-burst-right {
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    width: 20%;
+    height: 35%;
+    right: 10%;
+}
+#starburst {
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#starburst h3 {
+    text-align: center;
+    vertical-align: middle;
+}
+.starburst-white { 
+    background-image: url(/images/starburst-white.png);
+}
+.starburst-blue { 
+    background-image: url(/images/starburst-blue.png);
+}
+//#starburst {
+//    background: $white;
+//    width: 180px;
+//    height: 180px;
+//    position: relative;
+//    text-align: center;
+//}
+//#starburst:before, #starburst:after {
+//    content: "";
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    height: 180px;
+//    width: 180px;
+//    background: $white;
+//}
+//#starburst:before {
+//    -webkit-transform: rotate(30deg);
+//       -moz-transform: rotate(30deg);
+//        -ms-transform: rotate(30deg);
+//         -o-transform: rotate(30deg);
+//}
+//#starburst:after {
+//    -webkit-transform: rotate(60deg);
+//       -moz-transform: rotate(60deg);
+//        -ms-transform: rotate(60deg);
+//         -o-transform: rotate(60deg);
+//}
+//.starburst-white {
+//    background: $white;
+//}
+
+
+/* =============================================================================
+                                                Text
+============================================================================= */
+.text-white {
+    color: $white;
+}
+.text-black {
+    color: $black;
+}
+.text-pink {
+    color: $pink;
+}
+.text-orange {
+    color: $orange;
+}
+.text-blue {
+    color: $blue;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+h1 {
+    font-size: $font-size + 20;
+    margin: 0;
+    padding: 0;
+    font-weight: $bold;
+}
+h2 {
+    font-size: $font-size + 10;
+    font-weight: $bold;
+}
+h3 {
+    font-size: $font-size;
+}
+.heading-banner h1 {
+    padding: 70px 50px;
+}
+
+
+/* =============================================================================
+                                                Carousel
+============================================================================= */
+.carousel-content {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.carousel-content ul {
+    list-style: none;
+    font-size: $font-size + 20;
+    color: $white;
+    font-weight: $bold;
+    width: 100%;
+}
+.carousel-content li {
+    height: $li-height;
+    text-align: center;
+}
+
+
+/* =============================================================================
+                                                 Testing
+============================================================================= */
+//@each $heading, $color in $headings {
+//    #{$heading}:hover {
+//        border-bottom: $color 2px solid;
+//        color: darken( $color, 10%)
+//    }
+//}
+//.container{
+//    h2 {
+//        border-color: 1px solid #000;
+//    }
+//}
